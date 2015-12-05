@@ -74,5 +74,5 @@ setup(name='argon2',
           'Programming Language :: Python',
         ),
       license="CC0",
-      long_description=open('README.rst').read(),
+      long_description=open('README.md').read(),
      )
