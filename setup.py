@@ -68,7 +68,7 @@ setup(name='argon2',
       classifiers=(
           'Development Status :: 4 - Beta',
           'Environment :: Console',
-          'License :: Creative Commons (CC0)',
+          'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
           'Operating System :: POSIX',
           'Operating System :: Unix',
           'Programming Language :: Python',
