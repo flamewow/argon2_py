@@ -39,7 +39,6 @@ else:
 _argon2_module = Extension('_argon2',
                     sources = ['./src/argon2_py.c',
                                './phc-winner-argon2/src/argon2.c',
-                               './phc-winner-argon2/src/bench.c',
                                './phc-winner-argon2/src/core.c',
                                './phc-winner-argon2/src/encoding.c',
                                './phc-winner-argon2/src/ref.c',
@@ -55,7 +54,7 @@ _argon2_module = Extension('_argon2',
                            )
 
 setup(name='argon2',
-      version='0.1.7',
+      version='0.1.8',
       description='Bindings for the argon2 password hasher',
       author='Moroz Ilya',
       author_email='flamewowilia@gmail.com',
