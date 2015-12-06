@@ -64,6 +64,13 @@ def _ensure_bytes(data):
 
 
 def argon2_hash(password, salt, t=16, m=8, p=1, buflen=128, argon_type=Argon2Type.Argon2_i):
+    """
+    This is argon2 hashing function.
+
+    t - time cost, which defines the amount of computation realized and therefore the execution time, given in number of iterations
+    m - memory cost, which defines the memory usage, given in kibibytes
+    p - parallelism degree, which defines the number of parallel threads
+    """
     outbuf = create_string_buffer(buflen)
     password = _ensure_bytes(password)
     salt = _ensure_bytes(salt)
