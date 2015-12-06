@@ -20,7 +20,6 @@ if sys.platform.startswith('linux'):
                      ('HAVE_SYSINFO', '1'),
                      ('HAVE_SYS_SYSINFO_H', '1'),
                      ('_FILE_OFFSET_BITS', '64')]
-    # libraries = ['c_argon2', 'rt']
     libraries = []
     CFLAGS.append('-O2')
 elif sys.platform.startswith('win32'):
@@ -56,7 +55,7 @@ _argon2_module = Extension('_argon2',
                            )
 
 setup(name='argon2',
-      version='0.1.0',
+      version='0.1.5',
       description='Bindings for the argon2 password hasher',
       author='Moroz Ilya',
       author_email='flamewowilia@gmail.com',
@@ -74,5 +73,4 @@ setup(name='argon2',
           'Programming Language :: Python',
         ),
       license="CC0",
-      long_description=open('README.md').read(),
      )

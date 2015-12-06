@@ -1,9 +1,3 @@
-graft ./phc-winner-argon2/src/argon2.h
-graft ./phc-winner-argon2/src/core.h
-graft ./phc-winner-argon2/src/encoding.h
-graft ./phc-winner-argon2/src/ref.h
-graft ./phc-winner-argon2/src/thread.h
-
-graft ./phc-winner-argon2/src/blake2/blake.h
-graft ./phc-winner-argon2/src/blake2/blamka-round-opt.h
-graft ./phc-winner-argon2/src/blake2/blamka-round-ref.h
+recursive-include phc-winner-argon2 *.h
+include README.rst
+include src/*.c
