@@ -55,7 +55,7 @@ _argon2_module = Extension('_argon2',
                            )
 
 setup(name='argon2',
-      version='0.1.9',
+      version='0.1.10',
       description='Bindings for the argon2 password hasher',
       author='Moroz Ilya',
       author_email='flamewowilia@gmail.com',
