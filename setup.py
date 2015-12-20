@@ -30,7 +30,8 @@ elif sys.platform.startswith('win32'):
     extra_sources = ['argon2-windows-stubs/gettimeofday.c']
 elif sys.platform.startswith('darwin') and platform.mac_ver()[0] < '10.6':
     define_macros = [('HAVE_SYSCTL_HW_USERMEM', '1')]
-    libraries = ['c_argon2']
+    libraries = []
+
 else:
     define_macros = [('HAVE_POSIX_MEMALIGN', '1'),
                      ('HAVE_SYSCTL_HW_USERMEM', '1')]
