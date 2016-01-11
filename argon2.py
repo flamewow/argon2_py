@@ -39,6 +39,10 @@ class Argon2Type(object):
     Argon2_i = 1
 
 
+argon2_d = Argon2Type.Argon2_d
+argon2_i = Argon2Type.Argon2_i
+
+
 class Argon2Exception(Exception):
     errors = ("ARGON2_OK", "ARGON2_OUTPUT_PTR_NULL", "ARGON2_OUTPUT_TOO_SHORT", "ARGON2_OUTPUT_TOO_LONG",
               "ARGON2_PWD_TOO_SHORT", "ARGON2_PWD_TOO_LONG", "ARGON2_SALT_TOO_SHORT",
