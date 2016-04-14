@@ -79,4 +79,6 @@ setup(
         'Programming Language :: Python',
     ),
     license="CC0",
+
+    test_suite='tests',
 )
